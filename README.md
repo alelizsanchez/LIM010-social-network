@@ -147,7 +147,7 @@ El objetivo de usar Firestore en este proyecto, es que aprendes a manejar y pers
 ### DOM y Web APIs
 - [ ] Manipulación dinámica del DOM
 - [ ] History API
-- [ ] localStorage
+- [ ] `localStorage`
 
 ### Javascript
 - [ ] Uso de callbacks
@@ -205,7 +205,8 @@ En los proyectos anteriores hemos consumido (leído) datos, pero todavía no
 habíamos escrito datos (salvar cambios, crear datos, borrar, ...). En este
 proyecto tendrás que crear (salvar) nuevos datos, así como leer, actualizar y
 modificar datos existentes. Estos datos se podrán guardar de forma remota
-usando [Firestore](https://firebase.google.com/docs/firestore) o utilizando 
+usando [Firestore](https://firebase.google.com/docs/firestore) o de forma
+local utilizando`localStorage`.
 
 ### Autenticación y autorización
 
