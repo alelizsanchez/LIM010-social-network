@@ -70,24 +70,24 @@ const guardarDatos = () => {
 /**
  * Ingresar datos mediante un formulario
  */
-function manejarDatosPost(){
+const manejarDatosPost = () => {
 
   // Detectar el click el botñón "guardar"
   document.getElementById("guardar-post").addEventListener("click", () => {
-      
-      // Recupera el texto de la caja
-      const texto = document.getElementById("texto-post").value;
-      guardarPost(texto);
+
+    // Recupera el texto de la caja
+    const texto = document.getElementById("texto-post").value;
+    guardarPost(texto);
   });
 }
 
 /**
 * Guarda un post en localstorage
 */
-function guardarPost(texto){
+const guardarPost = (texto) => {
 
   const post = {
-      texto: texto
+    texto: texto
   };
 
   // Guardamos el dato en localStorage
@@ -95,13 +95,13 @@ function guardarPost(texto){
 
   // Invocamos al método para mostrar el post
   mostrarPost();
-  
+
 }
 
 /**
 * Muestra una post que ya existe en localStorage en pantalla
 */
-function mostrarPost(){
+const mostrarPost = () => {
   const post = JSON.parse(localStorage.getItem('post'));
   console.log(post);
 
