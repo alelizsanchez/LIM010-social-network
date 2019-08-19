@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./lib/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Livvic&display=swap" rel="stylesheet"> 
   <title>Renowable Energy</title>
 </head>
 <body>
@@ -55,8 +56,20 @@
         <button class = "button-dos" type="button" id="ingresar">Ingresar</button>
       </div>
     </form>
-
-  </div>
+      <!-- Post -->
+      <div class="Post">
+        <div class="Post__crear">
+            <label class="Post__label" for="">En qué estas pensado</label>
+            <textarea class="Post__text" id="texto-post" name="textarea" rows="5" cols="40" placeholder="Escribe algo interesante"></textarea>
+            <button class="Post__button" id="guardar-post">Guardar</button>
+        </div>
+        <div class="Post__mostrar oculto" id="caja-post">
+            <p>Qué interesante post!</p>
+            <p id="post-recuperado">Este esel texto del post</p>
+        </div>
+    </div>
+<!-- /Post -->
+</div>
   <script type="module" src="main.js"></script>
   <script type ="module" src="./lib/index.js"></script>
   <script type="module" src="validar.js"></script>
