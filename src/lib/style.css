@@ -130,3 +130,38 @@ h2{
 .hide{
   display: none;
 }
+/* post */
+.Post {
+  border: 1px solid #ccc;
+  font-family: 'Livvic', sans-serif;
+  font-size: 17px;
+  padding: 10px;
+} 
+.Post__label {
+  margin-bottom: 10px;
+  display: block;
+}
+.Post__text {
+  font-family: 'Livvic', sans-serif;
+  font-size: 17px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.Post__button {
+  cursor: pointer;
+  padding: 5px 20px;
+  border-radius: 10px;
+  border: 1px solid skyblue;
+  font-size: 16px;
+  background-color: skyblue;
+  display: block;
+}
+.Post__mostrar {
+  margin-top: 10px;
+  border: 2px solid green;
+  padding: 20px;
+}
+.Post__mostrar.oculto {
+  display: none;
+}
+/* fin post */
