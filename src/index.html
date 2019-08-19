@@ -4,9 +4,61 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Social Network</title>
+  <link rel="stylesheet" href="./lib/style.css">
+  <title>Renowable Energy</title>
 </head>
 <body>
+  <header>
+    <nav class="menu">
+      <ul>
+        <li>
+          <a href="#/">Renowable Energy</a>
+        </li>
+        <li></li>
+        <li>
+          <a href="#/CerrarSeción">Cerrar Seción </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <figure class="imagen-fondo">
+    <img src="/image/picture.jpg" alt="">
+  </figure>
+        <form id="registro" action="registrar.js" method="post" class="registrarr">
+          <div id = "vista">
+          <h2>Renowable Energy</h2>
+              <label class="form-item">Nombre</label>
+              <input class="form-item" type="text" id="nombre" required/>
+              <p id=""></p>
+              <br>
+              <label class="form-item">Correo Electrónico</label>
+              <input class="form-item" type="email" id="email" required/>
+              <p id="validar"></p>
+              <label class="form-item">Contraseña</label>
+              <input class="form-item" type="password" id="pw" required/>
+              <p id="error"></p>
+              <button class="button" type="button" id="sbmt" >Enviar</button>
+              <p id="todo-campo"></p>
+              <p>¿Ya tienes una cuenta? <a href="#" id="ingresarr">Ingresar</a> </p>
+              <!-- <p>¿No tienes una cuenta?</p> <a href="#/regristro">Registrate</a> -->
+          </div>
+        </form>
+        <form class="login hide" id = "login">
+          <h2>Renowable Recurse</h2>
+      <div class="vista-login">
+        <label class="form-item">Correo Electrónico</label>
+        <input class="form-item" type="email" id="email-login" />
+        <p id="validar"></p>
+        <label class="form-item">Contraseña</label>
+        <input class="form-item" type="password" id="pw-login" />
+        <br>
+        <button class = "button-dos" type="button" id="ingresar">Ingresar</button>
+      </div>
+    </form>
+
+  </div>
   <script type="module" src="main.js"></script>
+  <script type ="module" src="./lib/index.js"></script>
+  <script type="module" src="validar.js"></script>
 </body>
 </html>

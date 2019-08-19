@@ -1,0 +1,132 @@
+* {
+  margin:0px;
+  padding:0px;
+}
+.main{
+  height: calc(83vh - 25px);
+}
+.registrarr{
+  background-color:rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+  padding: 17px;
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-box-shadow: 10px 10px 5px 5px rgba(94, 93, 93, 0.75);
+  -moz-box-shadow: 10px 10px 5px 5px rgba(94, 93, 93, 0.75);
+  box-shadow: 10px 10px 5px 5px rgba(94, 93, 93, 0.75);
+  /* display: flex; */
+  flex-flow: column wrap;
+  height: 422px;
+  width: 336px;
+  margin: 0 auto;
+  align-items: center;
+}
+.registrarr .form-item {
+  display:flex;
+ flex-direction: column; 
+  align-items:flex-start;
+  width: 330px;
+  height: 38px;
+}
+.registrarr label{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+  border-radius: 2px;
+}
+.registrarr button{
+  width: 168px;
+  height: 50px;
+  background: #3897F0;
+  border-radius: 5px;
+  line-height: 25px;
+  font-family: Open Sans;
+  font-weight: 800;
+  font-size: 15px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-left: 80px;
+}
+.menu{
+  background-color: rgb(91, 168, 143);
+}
+ h1{
+   color: aqua;
+   font-family: 'Times New Roman', Times, serif;
+   text-align: center;
+   font-size: 42px;
+ }
+
+ .login{
+  background-color:rgba(255, 255, 255, 0.7);
+  border-radius: 5px;
+  padding: 17px;
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-box-shadow: 10px 10px 5px 5px rgba(94, 93, 93, 0.75);
+  -moz-box-shadow: 10px 10px 5px 5px rgba(94, 93, 93, 0.75);
+  box-shadow: 10px 10px 5px 5px rgba(94, 93, 93, 0.75);
+  /* display: flex; */
+  flex-flow: column wrap;
+  height: 414px;
+  width: 336px;
+  margin: 0 auto;
+  align-items: center;
+}
+.login .form-item {
+  display:flex;
+ flex-direction: column; 
+  align-items:flex-start;
+  width: 330px;
+  height: 38px;
+}
+.login label{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+  border-radius: 2px;
+}
+.login button{
+  width: 168px;
+  height: 50px;
+  background: rgb(209, 112, 204);
+  border-radius: 5px;
+  line-height: 25px;
+  font-family: Open Sans;
+  font-weight: 800;
+  font-size: 15px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-left: 80px;
+}
+h2{
+  color: rgb(21, 255, 0);
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  font-size: 42px;
+}
+#todo-campo{
+  color: red;
+}
+#validar{
+  color: red;
+}
+#error{
+  color:red;
+}
+.block{
+  display: block;
+}
+.hide{
+  display: none;
+}
