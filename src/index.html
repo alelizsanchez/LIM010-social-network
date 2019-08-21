@@ -22,7 +22,8 @@
     </nav>
   </header>
   <figure class="imagen-fondo">
-    <img src="/image/picture.jpg" alt="">
+    <img src="/image/giphy.webp" alt="">
+  <!--<img src="/image/picture.jpg" alt="">-->
   </figure>
         <form id="registro" action="registrar.js" method="post" class="registrarr">
           <div id = "vista">
@@ -55,6 +56,19 @@
         <button class = "button-dos" type="button" id="ingresar">Ingresar</button>
       </div>
     </form>
+    <!-- Post -->
+    <div class="Post">
+      <div class="Post__crear">
+          <label class="Post__label" for="">En qué estas pensado</label>
+          <textarea class="Post__text" id="texto-post" name="textarea" rows="5" cols="40" placeholder="Escribe algo interesante"></textarea>
+          <button class="Post__button" id="guardar-post">Guardar</button>
+      </div>
+      <div class="Post__mostrar oculto" id="caja-post">
+          <p>Qué interesante post!</p>
+          <p id="post-recuperado">Este esel texto del post</p>
+      </div>
+  </div>
+<!-- /Post -->
 
   </div>
   <script type="module" src="main.js"></script>
