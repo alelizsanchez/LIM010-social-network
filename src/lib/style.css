@@ -1,37 +1,70 @@
-* {
-  margin:0px;
-  padding:0px;
+/* ale */
+body{
+  min-height: 100vh;
 }
-.main{
-  height: calc(83vh - 25px);
+.menu{
+  display: none;
+  background-color: rgb(91, 168, 143);
+}
+.fondo-dos{
+  display: none;
+}
+.fondo{
+  display: none;
 }
 .registrarr{
-  background-color:rgba(255, 255, 255, 0.7);
-  border-radius: 5px;
-  padding: 17px;
-  width: 500px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-box-shadow: 10px 10px 5px 5px rgba(94, 93, 93, 0.75);
-  -moz-box-shadow: 10px 10px 5px 5px rgba(94, 93, 93, 0.75);
-  box-shadow: 10px 10px 5px 5px rgba(94, 93, 93, 0.75);
-  /* display: flex; */
-  flex-flow: column wrap;
-  height: 422px;
-  width: 336px;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 .registrarr .form-item {
+  display: flex;
+  width: 330px;
+  height: 38px;
+}
+/* ale */
+
+.registrarr label{
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 25px;
+  border-radius: 2px;
+}
+.registrarr button{
+  width: 168px;
+  height: 50px;
+  background: rgb(145, 240, 56);
+  border-radius: 5px;
+  line-height: 25px;
+  font-family: Open Sans;
+  font-weight: 800;
+  font-size: 15px;
+  color: #FFFFFF;
+  text-align: center;
+  }
+
+ h1{
+   color: aqua;
+   font-family: 'Times New Roman', Times, serif;
+   text-align: center;
+   font-size: 42px;
+ }
+
+ .login{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+ }
+.login .form-item {
   display:flex;
- flex-direction: column; 
+  flex-direction: column; 
   align-items:flex-start;
   width: 330px;
   height: 38px;
 }
-.registrarr label{
+.login label{
   font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
@@ -45,70 +78,12 @@
   background: #3897F0;
   border-radius: 5px;
   line-height: 25px;
-  font-family: Open Sans;
+  font-family: 'Livvic', sans-serif;
   font-weight: 800;
   font-size: 15px;
   color: #FFFFFF;
   text-align: center;
-  margin-left: 80px;
-}
-.menu{
-  background-color: rgb(91, 168, 143);
-}
- h1{
-   color: aqua;
-   font-family: 'Times New Roman', Times, serif;
-   text-align: center;
-   font-size: 42px;
- }
-
- .login{
-  background-color:rgba(255, 255, 255, 0.7);
-  border-radius: 5px;
-  padding: 17px;
-  width: 500px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-box-shadow: 10px 10px 5px 5px rgba(94, 93, 93, 0.75);
-  -moz-box-shadow: 10px 10px 5px 5px rgba(94, 93, 93, 0.75);
-  box-shadow: 10px 10px 5px 5px rgba(94, 93, 93, 0.75);
-  /* display: flex; */
-  flex-flow: column wrap;
-  height: 414px;
-  width: 336px;
-  margin: 0 auto;
-  align-items: center;
-}
-.login .form-item {
-  display:flex;
- flex-direction: column; 
-  align-items:flex-start;
-  width: 330px;
-  height: 38px;
-}
-.login label{
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 25px;
-  border-radius: 2px;
-}
-.login button{
-  width: 168px;
-  height: 50px;
-  background: rgb(209, 112, 204);
-  border-radius: 5px;
-  line-height: 25px;
-  font-family: Open Sans;
-  font-weight: 800;
-  font-size: 15px;
-  color: #FFFFFF;
-  text-align: center;
-  margin-left: 80px;
-}
+   }
 h2{
   color: rgb(21, 255, 0);
   font-family: 'Times New Roman', Times, serif;
@@ -129,4 +104,134 @@ h2{
 }
 .hide{
   display: none;
+}
+
+/* post */
+.Post {
+  border: 1px solid #ccc;
+  font-family: 'Livvic', sans-serif;
+  font-size: 17px;
+  padding: 10px;
+} 
+.Post__label {
+  margin-bottom: 10px;
+  display: block;
+}
+.Post__text {
+  font-family: 'Livvic', sans-serif;
+  font-size: 17px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+.Post__button {
+  cursor: pointer;
+  padding: 5px 20px;
+  border-radius: 10px;
+  border: 1px solid skyblue;
+  font-size: 16px;
+  background-color: skyblue;
+  display: block;
+}
+.Post__mostrar {
+  margin-top: 10px;
+  border: 2px solid green;
+  padding: 20px;
+}
+.Post__mostrar.oculto {
+  display: none;
+}
+/* fin post */
+
+@media screen and (min-width: 764px){
+  *{
+    margin:0; 
+    padding:0;
+  }
+   .registrarr {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+  }
+  .fondo{
+    width: 50%; 
+    display: block;
+  }
+  .login-dos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+  }
+
+  .fondo-dos{
+    width: 50%; 
+    display: block;
+  }
+  .registro{
+    flex-direction: row;
+    display: flex;
+  }
+  .menu{
+    display: block;
+  }
+  .registrarr button{
+    background-color: rgb(91, 168, 143);
+    margin: 20px 10px;
+    width: 209px;
+    height: 50px;
+    border-radius: 17px;
+    line-height: 25px;
+    font-family: Open Sans;
+    font-weight: 800;
+    font-size: 18px;
+    color: #FFFFFF;
+  }
+  h2{
+    font-family: 'Livvic', sans-serif;
+    margin: 25px;
+    color: rgb(21, 255, 0);
+    text-align: center;
+    font-size: 42px;
+  }
+  .registrarr label{
+    font-family: 'Livvic', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    border-radius: 2px;
+  }
+  
+  p{
+    font-family: 'Livvic', sans-serif; 
+  }
+  /* .login{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color:rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    padding: 17px;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-box-shadow: 10px 10px 5px 5px rgba(94, 93, 93, 0.75);
+    -moz-box-shadow: 10px 10px 5px 5px rgba(94, 93, 93, 0.75);
+    box-shadow: 10px 10px 5px 5px rgba(94, 93, 93, 0.75);
+    /* display: flex; */
+    /* flex-flow: column wrap;
+    height: 414px;
+    width: 336px;
+    margin: 0 auto;
+    align-items: center;
+  } */ 
+  .block{
+    display: block;
+  }
+  .hide{
+    display: none;
+  }
 }

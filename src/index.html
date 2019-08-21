@@ -1,78 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="./lib/style.css">
-  <title>Renowable Energy</title>
+  <link href="https://fonts.googleapis.com/css?family=Livvic&display=swap" rel="stylesheet">
+  <title>Energías Renovables</title>
 </head>
+
 <body>
   <header>
     <nav class="menu">
       <ul>
         <li>
-          <a href="#/">Renowable Energy</a>
+          <span>Energías Renovables</span>
         </li>
         <li></li>
         <li>
-          <a href="#/CerrarSeción">Cerrar Seción </a>
+          <button id="cerrar-sesion">cerrar sesión</button>
         </li>
       </ul>
     </nav>
   </header>
-  <figure class="imagen-fondo">
-    <img src="/image/giphy.webp" alt="">
-  <!--<img src="/image/picture.jpg" alt="">-->
-  </figure>
-        <form id="registro" action="registrar.js" method="post" class="registrarr">
-          <div id = "vista">
-          <h2>Renowable Energy</h2>
-              <label class="form-item">Nombre</label>
-              <input class="form-item" type="text" id="nombre" required/>
-              <p id=""></p>
-              <br>
-              <label class="form-item">Correo Electrónico</label>
-              <input class="form-item" type="email" id="email" required/>
-              <p id="validar"></p>
-              <label class="form-item">Contraseña</label>
-              <input class="form-item" type="password" id="pw" required/>
-              <p id="error"></p>
-              <button class="button" type="button" id="boton-registro" >Enviar</button>
-              <p id="todo-campo"></p>
-              <p>¿Ya tienes una cuenta? <a href="#" id="ingresarr">Ingresar</a> </p>
-              <!-- <p>¿No tienes una cuenta?</p> <a href="#/regristro">Registrate</a> -->
-          </div>
-        </form>
-        <form class="login hide" id = "login">
-          <h2>Renowable Recurse</h2>
-      <div class="vista-login">
+
+  <main>
+
+    <div id="registro" class="registro">
+      <img class="fondo" src="https://i.pinimg.com/originals/6b/14/84/6b14845219807d75ddb4db68638d466e.gif">
+      <form id="registro-login" action="registrar.js" method="post" class="registrarr">
+        <h2>Energías Renovables</h2>
+        <label class="form-item">Nombre</label>
+        <input class="form-item" type="text" id="nombre" required />
+        <p id=""></p>
+        <br>
+        <label class="form-item">Correo Electrónico</label>
+        <input class="form-item" type="email" id="email" required />
+        <p id="validar"></p>
+        <label class="form-item">Contraseña</label>
+        <input class="form-item" type="password" id="pw" required />
+        <p id="error"></p>
+        <button class="button" type="button" id="boton-registro">Enviar</button>
+        <p id="todo-campo"></p>
+        <p>¿Ya tienes una cuenta? <a href="#" id="ingresarr">Registrar</a> </p>
+        <!-- <p>¿No tienes una cuenta?</p> <a href="#/regristro">Registrate</a> -->
+      </form>
+    </div>
+
+    <div class="login hide" id="login">
+      <img class="fondo-dos" src="/image/picture.jpg">
+      <form class="login-dos">
+
+        <h2>Energías Renovables</h2>
+
         <label class="form-item">Correo Electrónico</label>
         <input class="form-item" type="email" id="email-login" />
         <p id="validar"></p>
         <label class="form-item">Contraseña</label>
         <input class="form-item" type="password" id="pw-login" />
         <br>
-        <button class = "button-dos" type="button" id="ingresar">Ingresar</button>
-      </div>
-    </form>
+        <button class="button-dos" type="button" id="ingresar">Ingresar</button>
+
+      </form>
+    </div>
+
     <!-- Post -->
-    <div class="Post">
+    <div class="Post hide" id="post">
       <div class="Post__crear">
-          <label class="Post__label" for="">En qué estas pensado</label>
-          <textarea class="Post__text" id="texto-post" name="textarea" rows="5" cols="40" placeholder="Escribe algo interesante"></textarea>
-          <button class="Post__button" id="guardar-post">Guardar</button>
+        <label class="Post__label" for="">En qué estas pensado</label>
+        <textarea class="Post__text" id="texto-post" name="textarea" rows="5" cols="40"
+          placeholder="Escribe algo interesante"></textarea>
+        <button class="Post__button" id="guardar-post">Guardar</button>
       </div>
       <div class="Post__mostrar oculto" id="caja-post">
-          <p>Qué interesante post!</p>
-          <p id="post-recuperado">Este esel texto del post</p>
+        <p>Qué interesante post!</p>
+        <p id="post-recuperado">Este es el texto del post</p>
       </div>
-  </div>
-<!-- /Post -->
+      .
+    </div>
+    <!-- /Post -->
+  </main>
 
-  </div>
-  <script type="module" src="main.js"></script>
-  <script  src="./lib/index.js"></script>
-  <script src="validar.js"></script>
+  <script type="module" src="./components/login.js"></script>
+  <script type="module" src="./components/registro.js"></script>
+  <script type="module" src="./components/post.js"></script>
+
 </body>
+
 </html>
