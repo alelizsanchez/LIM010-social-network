@@ -1,5 +1,5 @@
-const postEnunciado = document.getElementById('post')
-const iniciar = document.getElementById('ingresar')
+const postEnunciado = document.getElementById('post');
+const iniciar = document.getElementById('ingresar');
 iniciar.addEventListener('click',() => {
   post.classList.remove('hide');
   formLogin.classList.add('hide');

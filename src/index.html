@@ -26,42 +26,40 @@
   </header>
 
   <main>
+      <div class="login" id="login">
+        <img class="gift-image"src="/image/giphy.webp" alt="">
+          <!--<img class="fondo-dos" src="/image/picture.jpg">-->
+          <form class="login-dos">
+    
+            <h2>Energías Renovables</h2>
+    
+            <label class="form-item">Correo Electrónico</label>
+            <input class="form-item" type="email" id="email-login" placeholder="Tucorreo@gmail.com"/>
+            <p id="validar"></p>
+            <label class="form-item">Contraseña</label>
+            <input class="form-item" type="password" id="pw-login" placeholder="********"/>
+            <br>
+            <button class="button-dos" type="button" id="ingresar">Ingresar</button>
+            <p>¿No tienes una cuenta? <a href="#" id="a-registro">Regístrate</a> </p>
+          </form>
+        </div>
 
-    <div id="registro" class="registro">
-      <img class="fondo" src="https://i.pinimg.com/originals/6b/14/84/6b14845219807d75ddb4db68638d466e.gif">
+    <div id="registro" class="registro hide">
       <form id="registro-login" action="registrar.js" method="post" class="registrarr">
         <h2>Energías Renovables</h2>
         <label class="form-item">Nombre</label>
-        <input class="form-item" type="text" id="nombre" required />
+        <input class="form-item" type="text" id="nombre" required placeholder="Tu nombre" />
         <p id=""></p>
         <br>
         <label class="form-item">Correo Electrónico</label>
-        <input class="form-item" type="email" id="email" required />
+        <input class="form-item" type="email" id="email" required placeholder="Tucorreo@gmail.com"/>
         <p id="validar"></p>
         <label class="form-item">Contraseña</label>
-        <input class="form-item" type="password" id="pw" required />
+        <input class="form-item" type="password" id="pw" required placeholder="********" />
         <p id="error"></p>
-        <button class="button" type="button" id="boton-registro">Enviar</button>
+        <button class="button" type="button" id="boton-registro">Registrar</button>
         <p id="todo-campo"></p>
-        <p>¿Ya tienes una cuenta? <a href="#" id="ingresarr">Registrar</a> </p>
         <!-- <p>¿No tienes una cuenta?</p> <a href="#/regristro">Registrate</a> -->
-      </form>
-    </div>
-
-    <div class="login hide" id="login">
-      <img class="fondo-dos" src="/image/picture.jpg">
-      <form class="login-dos">
-
-        <h2>Energías Renovables</h2>
-
-        <label class="form-item">Correo Electrónico</label>
-        <input class="form-item" type="email" id="email-login" />
-        <p id="validar"></p>
-        <label class="form-item">Contraseña</label>
-        <input class="form-item" type="password" id="pw-login" />
-        <br>
-        <button class="button-dos" type="button" id="ingresar">Ingresar</button>
-
       </form>
     </div>
 

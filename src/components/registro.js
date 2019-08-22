@@ -1,58 +1,52 @@
 const btnRegistro = document.getElementById('boton-registro');
+const formLogin = document.getElementById('login').value;
+const formRegistro = document.getElementById('registro').value;
 const errorPw = document.getElementById('error');
 const validarEmail = document.getElementById('validar');
 const todoCampo = document.getElementById('todo-campo');
 
 let listaUsuarios = [];
 btnRegistro.addEventListener('click', () => {
-
-  // Caja de usuario
-  let nombreUsuario = document.getElementById('nombre');
-
-  // Caja de correo
-  let correoUsuario = document.getElementById('email');
-  
-  // Caja de password
-  let password = document.getElementById('pw');
-
+  const nombreUsuario = document.getElementById('nombre').value;
+  const correoUsuario = document.getElementById('email').value;
+  const contraseña = document.getElementById('pw').value;
   const validaCorreo = /\w+@\w+\.+[a-z]/;
 
-  // Contruye el JSON de usuario
-  const usuario = {
-    user: nombreUsuario.value,
-    email: correoUsuario.value,
-    password: password.value
-  };
-  listaUsuarios.push(usuario);
-
-  // arr.push(nombreUsuario.value);
-  // arr.push(correoUsuario.value);
-  // arr.push(password.value);
-  // console.log(nombreUsuario.value);
-
-  // Limpia las cajas de textos
-  nombreUsuario.value = '';
-  correoUsuario.value = '';
-  password.value = '';
-
-  localStorage.setItem('user_database', JSON.stringify(listaUsuarios));
-
-  //localStorage.setItem('users', JSON.stringify(arr));
-  //localStorage.setItem('emails', JSON.stringify(arr));
-  //localStorage.setItem('contraseña', JSON.stringify(arr));
-
-  /*if (nombreUsuario === '' || correoUsuario === '' || password === '') {
+  if (nombreUsuario === '' || correoUsuario === '' || contraseña === '') {
     todoCampo.innerHTML = 'Todos los campos estan vacíos';
-    return false;
-  }
-  else if (!validaCorreo.test(correoUsuario)) {
+  } else if (!validaCorreo.test(correoUsuario)) {
     validarEmail.innerHTML = 'El correo no es válido';
-    return false;
-  }
-  if (password.length < 6 || password.length > 8) {
-    errorPw.innerHTML = 'Contraseña muy corta, por favor usa de 6 a 8 caracteres';
-    return false;
-  }*/
+  } else if (contraseña.length >= 6 || contraseña.length <= 9) {
+    errorPw.innerHTML = 'Contraseña muy corta, por favor usa de 6 a 9 caracteres';
+  } else {  
+    // Contruye el JSON de usuario
+    const usuario = {
+      user: nombreUsuario.value,
+      email: correoUsuario.value,
+      password: password.value
+    };
+
+    listaUsuarios.push(usuario);
+  
+    // arr.push(nombreUsuario.value);
+    // arr.push(correoUsuario.value);
+    // arr.push(password.value);
+    // console.log(nombreUsuario.value);
+  
+    // Limpia las cajas de textos
+    nombreUsuario.value = '';
+    correoUsuario.value = '';
+    password.value = '';
+  
+    localStorage.setItem('user_database', JSON.stringify(listaUsuarios));
+  
+    localStorage.setItem('users', JSON.stringify(listaUsuarios));
+    localStorage.setItem('emails', JSON.stringify(listaUsuarios));
+    localStorage.setItem('contraseña', JSON.stringify(listaUsuarios));
+
+    formRegistro.classList.add('hide');
+    formLogin.classList.remove('hide');
+  
+  }  
 });
 
-const formRegistro = document.getElementById('registro');

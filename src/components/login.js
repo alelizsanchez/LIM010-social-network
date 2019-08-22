@@ -3,21 +3,23 @@ const validarEmail = document.getElementById('validar');
 const todoCampo = document.getElementById('todo-campo');
 
 const formLogin = document.getElementById('login');
-const ingrsarr = document.getElementById('ingresarr');
+const formRegistro = document.getElementById('registro');
+const aRegistro = document.getElementById('a-registro');
 const btnIngresar = document.getElementById('ingresar');
+const contraseñaLogin = document.getElementById('pw-login');
 
-ingrsarr.addEventListener('click', () => {
-    formLogin.classList.remove('hide');
-    formRegistro.classList.add('hide');
+aRegistro.addEventListener('click', () => {
+  formLogin.classList.add('hide');
+  formRegistro.classList.remove('hide','block');
+});
+    // const emailIngreso = document.getElementById('email-login').value;
+    // const pwIngreso = document.getElementById('pw-login').value;
   
-    const emailIngreso = document.getElementById('email-login').value;
-    const pwIngreso = document.getElementById('pw-login').value;
+    // if (emailIngreso !== correoUsuario) {
+    //   alert('El coreo no exixte, por favor regístrese');
+    //   return false;
+    // }
   
-    if (emailIngreso !== correoUsuario) {
-      alert('El coreo no exixte, por favor regístrese');
-      return false;
-    }
-  });
 
 const arrNombres = [];
 const arrEmail = [];
