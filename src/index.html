@@ -20,6 +20,7 @@
         <li></li>
         <li>
           <button id="cerrar-sesion">cerrar sesión</button>
+          <img src="https://img.icons8.com/color/48/000000/exit.png">
         </li>
       </ul>
     </nav>
@@ -27,7 +28,7 @@
 
   <main>
       <div class="login" id="login">
-        <img class="gift-image"src="/image/giphy.webp" alt="">
+        <img class="gift-image"src="/image/quechua_00.gif" alt="">
           <!--<img class="fondo-dos" src="/image/picture.jpg">-->
           <form class="login-dos">
     
@@ -38,12 +39,12 @@
             <p id="validar"></p>
             <label class="form-item">Contraseña</label>
             <input class="form-item" type="password" id="pw-login" placeholder="********"/>
-            <br>
             <button class="button-dos" type="button" id="ingresar">Ingresar</button>
             <p>¿No tienes una cuenta? <a href="#" id="a-registro">Regístrate</a> </p>
           </form>
         </div>
 
+    <!-- registro -->
     <div id="registro" class="registro hide">
       <form id="registro-login" action="registrar.js" method="post" class="registrarr">
         <h2>Energías Renovables</h2>
@@ -64,21 +65,34 @@
     </div>
 
     <!-- Post -->
-    <div class="Post hide" id="post">
-      <div class="Post__crear">
-        <label class="Post__label" for="">En qué estas pensado</label>
-        <textarea class="Post__text" id="texto-post" name="textarea" rows="5" cols="40"
-          placeholder="Escribe algo interesante"></textarea>
-        <button class="Post__button" id="guardar-post">Guardar</button>
+    <div class="post hide" id="post">
+        <form id="formulario-post">
+          <div class="Post__crear">
+            <label class="Post__label" for="">En qué estas pensado</label>
+            <textarea class="Post__text" id="texto-post" name="textarea" rows="5" cols="40"
+              placeholder="Escribe algo interesante"></textarea>
+            <!-- <button type="submit" class="Post__button" >Guardar</button> -->
+            <div>
+              <img src="https://img.icons8.com/color/48/000000/image.png" id ="post-image">
+              <select id="seleccionar-privacidad">
+                <option value="publico" id="publico">Público</option>
+                <option value="privado" id="privado">Privado</option>
+              </select>
+              <input type="submit" value="compartir" class="btn-compartir" id="compartir">
+            </div>
+          </div>
+        </form>
       </div>
-      <div class="Post__mostrar oculto" id="caja-post">
-        <p>Qué interesante post!</p>
-        <p id="post-recuperado">Este es el texto del post</p>
-      </div>
-      .
-    </div>
+        <div class="mostrar-post" id="publicando-post">
+        <div id="posts" class=""></div>
+      </div> 
+  
     <!-- /Post -->
   </main>
+
+  <template id="template-login">
+    <h1>Hola mundo, [usuario]</h1>
+  </template>
 
   <script type="module" src="./components/login.js"></script>
   <script type="module" src="./components/registro.js"></script>

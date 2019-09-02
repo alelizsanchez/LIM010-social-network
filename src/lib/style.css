@@ -1,4 +1,3 @@
-/* ale */
 body{
   min-height: 100vh;
 }
@@ -22,7 +21,6 @@ body{
   width: 330px;
   height: 38px;
 }
-/* ale */
 
 .registrarr label{
   font-family: Open Sans;
@@ -107,23 +105,23 @@ h2{
 }
 
 /* post */
-.Post {
+.post {
   border: 1px solid #ccc;
   font-family: 'Livvic', sans-serif;
   font-size: 17px;
   padding: 10px;
 } 
-.Post__label {
+.post-label {
   margin-bottom: 10px;
   display: block;
 }
-.Post__text {
+.post-text {
   font-family: 'Livvic', sans-serif;
   font-size: 17px;
   padding: 5px;
   margin-bottom: 10px;
 }
-.Post__button {
+.post__button {
   cursor: pointer;
   padding: 5px 20px;
   border-radius: 10px;
@@ -132,12 +130,13 @@ h2{
   background-color: skyblue;
   display: block;
 }
-.Post__mostrar {
+.post__mostrar {
   margin-top: 10px;
   border: 2px solid green;
   padding: 20px;
+  width: 316px;
 }
-.Post__mostrar.oculto {
+.post__mostrar.oculto {
   display: none;
 }
 /* fin post */
@@ -273,3 +272,59 @@ h2{
   color: #FFFFFF;
   text-align: center;
 }
+.btnSalir{
+  width: 168px;
+  height: 50px;
+  background: rgb(176, 228, 34);
+  border-radius: 5px;
+  line-height: 25px;
+  font-family: 'Livvic', sans-serif;
+  font-weight: 800;
+  font-size: 15px;
+  color: rgb(219, 78, 35);
+  text-align: center;
+}
+.btn-compartir{
+  padding: 8px 15px;
+  border-radius: 20px;
+  border: 1;
+  border: none;
+  color: #332c17;
+  background: #f0c024;
+  font-weight: bold;
+}
+.btn-img{
+  color: #f2ea77;
+    background: #e41749;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 18px;
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+.create-post {
+  border: 1px solid;
+  width: max-content; 
+  margin-top: 20px;
+  height: 140px; 
+  border-radius: 3px;
+  background: #d01818;
+}
+/* @media screen and (min-width: 764px)
+ {
+  font-size: 16px;
+} */
+/* .mostrar-post{
+  display: flex;
+  border: 1px solid;
+  width: max-content; 
+  margin-top: 20px;
+  height: 140px; 
+  border-radius: 3px;
+  background: #18d0c1;
+}  */
