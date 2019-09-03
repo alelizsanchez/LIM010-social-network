@@ -5,7 +5,7 @@ let nombreUsuario = document.getElementById('nombre');
 // Caja de correo
 let correoUsuario = document.getElementById('email');
 console.log(correoUsuario);
-// Caja de password
+// Caja de passwor 
 let password = document.getElementById('pw');
 const formLogin = document.getElementById('login');
 const formRegistro = document.getElementById('registro');

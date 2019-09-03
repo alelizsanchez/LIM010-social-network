@@ -105,7 +105,7 @@ h2{
 }
 
 /* post */
-.post {
+.Post {
   border: 1px solid #ccc;
   font-family: 'Livvic', sans-serif;
   font-size: 17px;
@@ -121,7 +121,7 @@ h2{
   padding: 5px;
   margin-bottom: 10px;
 }
-.post__button {
+.Post__button {
   cursor: pointer;
   padding: 5px 20px;
   border-radius: 10px;
@@ -130,14 +130,19 @@ h2{
   background-color: skyblue;
   display: block;
 }
-.post__mostrar {
+.Post__mostrar {
   margin-top: 10px;
   border: 2px solid green;
   padding: 20px;
-  width: 316px;
+  width: 265px;
 }
-.post__mostrar.oculto {
+.Post__mostrar.oculto {
   display: none;
+}
+.posteando{
+  margin-top: 10px;
+  padding: 20px;
+  width: 316px;
 }
 /* fin post */
 
@@ -311,20 +316,33 @@ h2{
   border: 1px solid;
   width: max-content; 
   margin-top: 20px;
-  height: 140px; 
+  height: 221px; 
   border-radius: 3px;
   background: #d01818;
 }
-/* @media screen and (min-width: 764px)
- {
-  font-size: 16px;
-} */
-/* .mostrar-post{
+
+.mostrar-post{
   display: flex;
   border: 1px solid;
   width: max-content; 
   margin-top: 20px;
-  height: 140px; 
+  /* height: 140px;  */
   border-radius: 3px;
-  background: #18d0c1;
-}  */
+  margin-left: 20px;
+  /* background: #18d0c1; */
+} 
+.select-icon{
+  margin-right: 119px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+/* .posteando{
+  margin-top: 10px;
+  border: 2px solid green; 
+  padding: 20px;
+  width: 316px;
+} */
+#formulario-post{
+  margin-left: 20px;
+}

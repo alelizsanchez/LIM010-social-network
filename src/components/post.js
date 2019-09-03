@@ -1,5 +1,7 @@
-const inputPost = document.getElementById('post')
-const btnLogin = document.getElementById('ingresar')
+const inputPost = document.getElementById('post');
+const btnLogin = document.getElementById('ingresar');
+const iconEdit = document.getElementById('icon-edit');
+const iconDelete = document.getElementById('icon-delete');
 
 btnLogin.addEventListener('click',() => {
   post.classList.remove('hide');
@@ -14,7 +16,7 @@ btnLogin.addEventListener('click',() => {
  
 const manejarDatosPost = () => {
 
-  // Detectar el click el botñón "guardar"
+  // Detectar el click el botón "guardar"
   document.getElementById('guardar-post').addEventListener('click', () => {
 
     // Recupera el texto de la caja
@@ -73,3 +75,4 @@ const mostrarPost = () => {
 // Inicia los métodos
 // manejarDatosPost();
 /*  fin post */
+const 
