@@ -1,3 +1,4 @@
+html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,8 +12,8 @@
 </head>
 
 <body>
-  <header>
-    <nav class="menu">
+  <header class="menu hide" id="menu">
+    <nav >
       <ul>
         <li>
           <span>Energías Renovables</span>
@@ -20,29 +21,28 @@
         <li></li>
         <li>
           <button id="cerrar-sesion">cerrar sesión</button>
-          <img src="https://img.icons8.com/metro/26/000000/exit.png" id="icon-salir">
+          <img src="https://img.icons8.com/color/48/000000/exit.png">
         </li>
       </ul>
     </nav>
   </header>
 
   <main>
-      <div class="login" id="login">
-        <img class="gift-image"src="/image/quechua_00.gif" alt="">
-          <!--<img class="fondo-dos" src="/image/picture.jpg">-->
-          <form class="login-dos">
-    
-            <h2>Energías Renovables</h2>
-    
-            <label class="form-item">Correo Electrónico</label>
-            <input class="form-item" type="email" id="email-login" placeholder="Tucorreo@gmail.com"/>
-            <p id="validar"></p>
-            <label class="form-item">Contraseña</label>
-            <input class="form-item" type="password" id="pw-login" placeholder="********"/>
-            <button class="button-dos" type="button" id="ingresar">Ingresar</button>
-            <p>¿No tienes una cuenta? <a href="#" id="a-registro">Regístrate</a> </p>
-          </form>
-        </div>
+    <!-- login -->
+    <div class="login" id="login">
+      <img class="fondo-dos" src="/image/quechua_00.gif" alt="">
+      <!--<img class="fondo-dos" src="/image/picture.jpg">-->
+      <form class="login-dos">
+        <h2>Energías Renovables</h2>
+        <label class="form-item">Correo Electrónico</label>
+        <input class="form-item" type="email" id="email-login" placeholder="Tucorreo@gmail.com" />
+        <p id="validar"></p>
+        <label class="form-item">Contraseña</label>
+        <input class="form-item" type="password" id="pw-login" placeholder="********" />
+        <button class="button-dos" type="button" id="ingresar">Ingresar</button>
+        <p>¿No tienes una cuenta? <a href="#" id="a-registro">Regístrate</a> </p>
+      </form>
+    </div>
 
     <!-- registro -->
     <div id="registro" class="registro hide">
@@ -53,53 +53,42 @@
         <p id=""></p>
         <br>
         <label class="form-item">Correo Electrónico</label>
-        <input class="form-item" type="email" id="email" required placeholder="Tucorreo@gmail.com"/>
+        <input class="form-item" type="email" id="email" required placeholder="Tucorreo@gmail.com" />
         <p id="validar"></p>
         <label class="form-item">Contraseña</label>
         <input class="form-item" type="password" id="pw" required placeholder="********" />
         <p id="error"></p>
         <button class="button" type="button" id="boton-registro">Registrar</button>
         <p id="todo-campo"></p>
-        <!-- <p>¿No tienes una cuenta?</p> <a href="#/regristro">Registrate</a> -->
       </form>
     </div>
 
     <!-- Post -->
     <div class="post hide" id="post">
-        <form id="formulario-post">
-          <div class="create-post">
-            <label class="post-label" for="">En qué estas pensado</label>
-            <textarea class="post-text" id="texto-post" name="textarea" rows="5" cols="40"
-              placeholder="Escribe algo interesante"></textarea>
-               <div class="select-icon">
-                <img src="https://img.icons8.com/color/48/000000/image.png" id ="post-image">
-                <select id="seleccionar-privacidad">
-                  <option value="publico" id="publico">Público</option>
-                  <option value="privado" id="privado">Privado</option>
-                </select>
-                <input type="submit" value="compartir" class="btn-compartir" id="compartir">
-              </div>
+      <form id="formulario-post">
+        <div class="Post__crear">
+          <label class="Post__label" for="">En qué estas pensado</label>
+          <textarea class="Post__text" id="texto-post" name="textarea" rows="5" cols="40"
+            placeholder="Escribe algo interesante"></textarea>
+          <!-- <button type="submit" class="Post__button" >Guardar</button> -->
+          <div>
+            <img src="https://img.icons8.com/color/48/000000/image.png" id="post-image">
+            <select id="seleccionar-privacidad">
+              <option value="publico" id="publico">Público</option>
+              <option value="privado" id="privado">Privado</option>
+            </select>
+            <input type="submit" value="compartir" class="btn-compartir" id="compartir">
           </div>
-        </form>
-      </div>
-        <div class="mostrar-post" id="publicando-post">
-        <div id="posts" class="posteando">
-            <img src="https://img.icons8.com/material-outlined/24/000000/edit-column.png" id ="icon-edit">
-            <img src="https://img.icons8.com/ios-glyphs/30/000000/delete-forever.png" id="icon-delete">
         </div>
-      </div> 
-  
+      </form>
+    </div>
+    <div class="mostrar-post" id="publicando-post">
+      <div id="posts" class=""></div>
+    </div>
     <!-- /Post -->
   </main>
 
-  <template id="template-login">
-    <h1>Hola mundo, [usuario]</h1>
-  </template>
-
-  <script type="module" src="./components/login.js"></script>
-  <script type="module" src="./components/registro.js"></script>
-  <script type="module" src="./components/post.js"></script>
-
-</body>
+   <script type="module" src="./components/index.js"></script>
+ </body>
 
 </html>
